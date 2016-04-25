@@ -37,6 +37,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.3.6)
+      execjs
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (8.2.4)
     capistrano (3.4.1)
@@ -161,6 +166,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails (~> 6.3, >= 6.3.6)
+  bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   capistrano (~> 3.4.1)
   capistrano-passenger
@@ -169,8 +176,10 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  json (~> 1.8, >= 1.8.3)
   pg (~> 0.15)
   rails (= 4.2.6)
+  sass (~> 3.4, >= 3.4.22)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
