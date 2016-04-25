@@ -235,7 +235,7 @@ p {
     width: 100%;
 }
 .intro {
-    background-image: url(../img/background.jpg); /* Fullscreen Background Image */
+    background-image: url(../images/background.jpg); /* Fullscreen Background Image */
     background-size: cover;
     background-position: center;
     background-color: #2a2e39;
