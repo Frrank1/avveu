@@ -3,7 +3,8 @@ lock '3.4.1'
 
 set :application, 'avveu'
 set :repo_url, 'https://github.com/Frrank1/avveu.git'
-set :passenger_restart_with_touch, true
+after :some_other_task, :'passenger:restart'
+set :passenger_restart_wait, 5
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
