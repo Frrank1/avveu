@@ -109,36 +109,36 @@ textarea { resize: vertical }
 */
 @font-face {
     font-family: 'BeonMedium';
-    src: url('../fonts/beon-webfont.eot');
-    src: local('☺'), url('../fonts/beon-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/beon-webfont.woff') format('woff'), url('../fonts/beon-webfont.ttf') format('truetype'), url('../fonts/beon-webfont.svg#BeonMedium') format('svg');
+    src: url('/assets/fonts/beon-webfont.eot');
+    src: local('☺'), url('/assets/fonts/beon-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/beon-webfont.woff') format('woff'), url('../fonts/beon-webfont.ttf') format('truetype'), url('../fonts/beon-webfont.svg#BeonMedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'latobold';
-    src: url('../fonts/Lato-Bold-webfont.eot');
-    src: url('../fonts/Lato-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Bold-webfont.woff2') format('woff2'), url('../fonts/Lato-Bold-webfont.woff') format('woff'), url('../fonts/Lato-Bold-webfont.ttf') format('truetype'), url('../fonts/Lato-Bold-webfont.svg#latobold') format('svg');
+    src: url('/assets/fonts/Lato-Bold-webfont.eot');
+    src: url('/assets/fonts/Lato-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Bold-webfont.woff2') format('woff2'), url('../fonts/Lato-Bold-webfont.woff') format('woff'), url('../fonts/Lato-Bold-webfont.ttf') format('truetype'), url('../fonts/Lato-Bold-webfont.svg#latobold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'latolight';
-    src: url('../fonts/Lato-Light-webfont.eot');
-    src: url('../fonts/Lato-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Light-webfont.woff2') format('woff2'), url('../fonts/Lato-Light-webfont.woff') format('woff'), url('../fonts/Lato-Light-webfont.ttf') format('truetype'), url('../fonts/Lato-Light-webfont.svg#latolight') format('svg');
+    src: url('/assets/fonts/Lato-Light-webfont.eot');
+    src: url('/assets/fonts/Lato-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Light-webfont.woff2') format('woff2'), url('../fonts/Lato-Light-webfont.woff') format('woff'), url('../fonts/Lato-Light-webfont.ttf') format('truetype'), url('../fonts/Lato-Light-webfont.svg#latolight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'latoregular';
-    src: url('../fonts/Lato-Regular-webfont.eot');
-    src: url('../fonts/Lato-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Regular-webfont.woff2') format('woff2'), url('../fonts/Lato-Regular-webfont.woff') format('woff'), url('../fonts/Lato-Regular-webfont.ttf') format('truetype'), url('../fonts/Lato-Regular-webfont.svg#latoregular') format('svg');
+    src: url('/assets/fonts/Lato-Regular-webfont.eot');
+    src: url('/assets/fonts/Lato-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Regular-webfont.woff2') format('woff2'), url('../fonts/Lato-Regular-webfont.woff') format('woff'), url('../fonts/Lato-Regular-webfont.ttf') format('truetype'), url('../fonts/Lato-Regular-webfont.svg#latoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sanslight';
-    src: url('../fonts/OpenSans-Light-webfont.eot');
-    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    src: url('/assets/fonts/OpenSans-Light-webfont.eot');
+    src: url('/assets/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -235,7 +235,7 @@ p {
     width: 100%;
 }
 .intro {
-    background-image: url(../images/background.jpg); /* Fullscreen Background Image */
+    background-image: url(/assets/images/background.jpg); /* Fullscreen Background Image */
     background-size: cover;
     background-position: center;
     background-color: #2a2e39;
@@ -694,18 +694,12 @@ a:hover { text-decoration: underline }
        Helper classes
 * ========================================================================== 
 */
-/*
- * Hide visually and from screen readers:
- * http://juicystudio.com/article/screen-readers-display-none.php
- */
+
 .hidden {
     display: none !important;
     visibility: hidden;
 }
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -716,11 +710,7 @@ a:hover { text-decoration: underline }
     position: absolute;
     width: 1px;
 }
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -963,7 +953,7 @@ a:hover { text-decoration: underline }
     bottom: 0;
     left: 0;
     display: block;
-    background: #fff url(../img/Preloader.gif) no-repeat center center;
+    background: #fff url(assets/images/Preloader.gif) no-repeat center center;
     opacity: 1;
     -moz-opacity: 1;
     -webkit-opacity: 1;
@@ -1016,8 +1006,7 @@ a:hover { text-decoration: underline }
     *:after {
         background: transparent !important;
         color: #000 !important;
-        /* Black prints faster: ;
-        http: //www.sanbeiji.com/archives/953 */ box-shadow: none !important;
+        box-shadow: none !important;
         text-shadow: none !important;
     }
     a,
